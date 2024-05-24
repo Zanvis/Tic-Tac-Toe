@@ -1,0 +1,243 @@
+[gd_scene load_steps=10 format=3 uid="uid://diw78ja88ectg"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_adhox"]
+[ext_resource type="Texture2D" uid="uid://dr2rj3dp2hiiv" path="res://Terrain (16x16).png" id="2_p6dlm"]
+[ext_resource type="Texture2D" uid="uid://bwgarg4cru2dg" path="res://board-res.jpg" id="3_f5bfo"]
+[ext_resource type="Texture2D" uid="uid://dej52g4323jtq" path="res://o.png" id="4_v4drx"]
+[ext_resource type="Texture2D" uid="uid://c1kj8q5klceby" path="res://x.png" id="5_07ara"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_icxu6"]
+texture = ExtResource("2_p6dlm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hnugg"]
+sources/0 = SubResource("TileSetAtlasSource_icxu6")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rntsq"]
+bg_color = Color(0.290196, 0.686275, 0.533333, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.372549, 0, 0.0156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4k18g"]
+bg_color = Color(0.74902, 0.564706, 0.243137, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_adhox")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_hnugg")
+format = 2
+
+[node name="Board" type="Sprite2D" parent="."]
+position = Vector2(311.5, 298)
+scale = Vector2(1.25, 1.221)
+texture = ExtResource("3_f5bfo")
+
+[node name="O" type="Sprite2D" parent="."]
+position = Vector2(-106, 162)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("4_v4drx")
+
+[node name="X" type="Sprite2D" parent="."]
+position = Vector2(-111, 321)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("5_07ara")
+
+[node name="GameOverMenu" type="CanvasLayer" parent="."]
+process_mode = 2
+visible = false
+
+[node name="Panel" type="Panel" parent="GameOverMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -125.0
+offset_right = 50.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rntsq")
+
+[node name="Result" type="Label" parent="GameOverMenu"]
+offset_left = 166.5
+offset_top = 200.0
+offset_right = 433.5
+offset_bottom = 258.0
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnRestart" type="Button" parent="GameOverMenu"]
+offset_left = 175.0
+offset_top = 300.0
+offset_right = 425.0
+offset_bottom = 363.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_4k18g")
+text = "Play Again"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = 731.0
+offset_top = 264.0
+offset_right = 854.0
+offset_bottom = 295.0
+item_count = 2
+popup/item_0/text = "2 players"
+popup/item_0/id = 0
+popup/item_1/text = "Computer"
+popup/item_1/id = 1
+
+[connection signal="pressed" from="GameOverMenu/btnRestart" to="." method="_on_btn_restart_pressed"]
